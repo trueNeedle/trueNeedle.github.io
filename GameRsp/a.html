@@ -816,7 +816,11 @@
             isBuy[i] = false;
         }
 		if (isMobile()) {
-			document.getElementById("bd").style.transform="rotateZ(90deg)";
+			var lh=document.documentElement.clientHeight/700;
+			var lw=document.documentElement.clientWidth/1400;
+			var lz=(lh<lw?lh:lw);
+			alert(lz);
+			document.getElementById("bd").style.transform="rotateZ(90deg) scale("+lz.toFixed(1)+")";
 		}
     }
 
