@@ -399,7 +399,7 @@
                         </div>
                     </div>
                     <div style="width: 120px; height: 72px; background: #282828; position: absolute; left: 50%; top: 170px; transform: translate(-50%,-100%); border: 8px solid dodgerblue ">
-                        <p id="rbtEmo" style="color:white;text-align:center;font-size:20px">≖＿≖</p>
+                        <p id="rbtEmo" style="color:white;text-align:center;font-size:20px;font-family:info">≖＿≖</p>
                         <p id="zzz" style="position: absolute; left:90px; top:-15px;font-size:20px">&#x1F4A4</p>
                     </div>
 
@@ -816,8 +816,8 @@
             isBuy[i] = false;
         }
 		if (isMobile()) {
-			var lh=document.documentElement.clientHeight/2000;
-			var lw=document.documentElement.clientWidth/1000;
+			var lh=document.documentElement.clientHeight/1400;
+			var lw=document.documentElement.clientWidth/700;
 			var lz=(lh<lw?lh:lw);
 			document.getElementById("bd").style.transform="rotateZ(90deg) scale("+lz.toFixed(1)+")";
 		}
@@ -1088,7 +1088,7 @@
         } else if (winRst == 2) {
             rbtEmo.innerText = "￣△￣";
         } else {
-            rbtEmo.innerText = "｀へ´ ";
+            rbtEmo.innerText = "＞﹏＜";
         }
 
         setRoundInfo();
